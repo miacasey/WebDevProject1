@@ -1,51 +1,48 @@
 # Project 1, Milestone 1 - Design & Plan
 
-Your Name:
-
-## Markdown
-
-[**Delete this section before you submit your assignment.**]
-
-This is a Markdown file. All written documents that you will submit this semester will be Markdown files. Markdown is a commonly used format by developers and bloggers. It's something that you should know.
-
-The following links are Markdown references:
-* <https://guides.github.com/features/mastering-markdown/>
-* <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>
-
-When writing your Markdown file in Atom. Open the command palette and search for **Markdown Preview: Toggle**. This will open up a panel in Atom where you can preview your formatted Markdown file.
-
-This is how your insert images into your Markdown documents:
-
-![](example.png)
-
-**Tip: The above example image could double for both a sketch and a wireframe.**
+Your Name: Mia Casey
 
 ## 1. Persona
 
-[1. Pick a persona]
 
-I've selected **[Abby/Patricia/Patrick/Tim]** as my persona.
+I've selected **Abby** as my persona.
 
-I've selected my persona because... [Tell us why you picked your persona in 1-3 sentences.]
+I've selected my persona because Abby has opposite qualities from me in four out of the five aspects we studied. Abby has low self-efficacy, comprehensive information processing, process-oriented learning, and risk averse attitude towards technology. This difference will force me to satisfy the needs of all types of users.
 
 ## 2. Sketches
+I created pretty simple sketches because the design would work well for Abby. She has low confidence or self-efficacy when working with technology so I wanted to sketch something that was easy to navigate. Abby rarely has spare time so I wanted her to be able to take in all the essential information of the website. Below are two different sketches to satisfy the needs of Abby:
 
-[2. Create some sketches to generate ideas about a website design that would work for your persona.]
-
-[Tell us why your sketches meet the needs of your persona. 1-3 sentences]
-
-[Insert your 2-3 sketches here.]
+![](project1sketches.png)
 
 ## 3. Wireframes
 
-[3. Author detailed wireframes that will become the design that you program for the final milestone.]
+![](project1wireframes1.png)
+![](project1wireframes2.png)
 
-[Insert your 3-4 wireframes here.]
 
 ## 4. Coding Plan & Pseudocode
 
-[4. Author a plan for how you will code your PHP website.]
 
-[Make sure you layout how to you plan to use PHP *includes*.]
+I will have three subfolders: images, includes, and styles. Images will hold all the images (.svg) that I plan to use.
 
-[Write your pseudocode for your user defined function.]
+Includes will hold three php **includes**; **header.php, footer.php, and init.php.** The header include will create the surfing vignette image with the main header and the navigation bar (with a **loop** and **conditional statement**). The footer include will include my information and email. The init include will hold the page and title names (in an **array**) and will be included in the four main pages.
+
+The styles folder will hold one css file named **all.css** for all of my styles.
+
+The four pages will be in the project folder: **index.php, travel.php, history.php,** and **gear.php**. The index page will have two columns (formatted in all.css) and basic text with images. The travel page will use the HTML <map> tag to include ~5 clickable areas of the map linking to the surf spot's description and image below. The history page will have three columns documenting three eras in surf history with basic text and images. Lastly, the gear page will use a list (in an **array**) of the gear that you need to acquire to surf. This will require a non-trivial **user defined PHP function** that outputs elements of the array into a list.
+
+Pseudocode for my user defined function:
+
+```
+function print_gear(item)
+  prints out the item description in an <li> tag
+end function
+```
+
+and for the HTML body:
+
+```
+for each(item in gear)
+  call the function print_gear(item)
+end for each loop
+```
