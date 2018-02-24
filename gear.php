@@ -1,8 +1,8 @@
 <?php
 include("includes/init.php");
 
-// current location
-$current_page_id="index";
+// declare the current location, utilized in header.php
+$current_page_id="gear";
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,16 +10,15 @@ $current_page_id="index";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <link rel="stylesheet" type="text/css" href="styles/all.css" media="all" />
 
-  <title id="menu-font"> Home - <?php echo $title;?></title>
+  <title>Gear - <?php echo $title;?></title>
 </head>
 
 <body>
   <?php include("includes/header.php");?>
   <div>
-    k
+    c
   </div>
 
 </body>
