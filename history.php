@@ -56,6 +56,10 @@ $current_page_id="history";
         <br>
         <span class='citation'> (source: <a href=https://en.wikipedia.org/wiki/Surfing> https://en.wikipedia.org/wiki/Surfing </a>)</span>
     </div>
+    <figcaption>
+          <span class="citation">(information source: <a href="http://www.allstaractivities.com/sports/surfing/History-of-surfing.htm">
+            http://www.allstaractivities.com/sports/surfing/History-of-surfing.htm</a>)</span>
+    </figcaption>
   </div>
 </body>
 </html>

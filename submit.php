@@ -4,7 +4,7 @@ include("includes/init.php");
 // declare the current location, utilized in header.php
 $current_page_id="gear";
 
-// enrollment form data
+// function that outputs a picture of the type of wetsuit given the season the user inputs
 function seasonGear($season) {
   $source1= "http://www.surfscience.com/topics/gear-and-equipment/surf-wear/what-to-wear-while-surfing/";
   if ($season == "Summer") {
@@ -15,7 +15,7 @@ function seasonGear($season) {
     <br> <span class='citation'> (source: <a href=" . $source1 . ">" . $source1 . "</a>)</span>";
   }
 }
-
+//function that outputs a picture of the type of surfboard given the level of expertise the user inputs
 function levelGear($level){
   $source2= "http://www.newquaysurfer.org/2011/03/05/a-beginners-guide-to-buying-a-surfboard/";
   if ($level== "Beginner") {
@@ -48,12 +48,12 @@ function levelGear($level){
   <div id="content">
       <h3> Gear to Buy: </h3>
         <?php
+        //if the form is submitted we run our two functions to print pictures/descriptions
         if (isset($_REQUEST["submit"])) {
           seasonGear($_REQUEST["season"]);
           levelGear($_REQUEST["level"]);
         }
         ?>
-
   </div>
 </body>
 

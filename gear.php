@@ -20,7 +20,6 @@ $current_page_id="gear";
     <h3> find the gear for you! </h3>
     <form method="post" action="submit.php">
       <fieldset>
-      <legend>Type of Surf:</legend>
       Time of Season? <br>
       <input type="radio" name="season" value="Summer" required> Summmer
       <input type="radio" name="season" value="Winter" required> Winter <br> <br>
@@ -29,7 +28,7 @@ $current_page_id="gear";
       <input type="radio" name="level" value="intermediate" required> Intermediate
       <input type="radio" name="level" value="advanced" required> Advanced
       <br><br>
-      <input type="submit" name="submit" value="Submit Form"/>
+      <input type="submit" name="submit" value="Submit!"/>
     </fieldset>
     </form>
   </div>

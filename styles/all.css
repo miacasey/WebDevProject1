@@ -88,13 +88,15 @@ header {
 .main {
   width: 100%;
   position: relative;
-  float: left;
+
 }
 
 .boxed {
   border: 1px solid black;
   padding: 2%;
+  margin: 6%;
 }
+
 
 .main #marker1 {
   position: absolute;
@@ -102,31 +104,37 @@ header {
   left: 0;
   top:35%;
 }
-
 .main #marker2 {
   position: absolute;
   width: 8%;
   right: 8%;
   top:60%;
 }
-
 .main #marker3 {
   position: absolute;
   width: 8%;
   left: 8.5%;
   top:22%;
 }
+.main #marker4 {
+  position: absolute;
+  width: 8%;
+  right: 43%;
+  top:60%;
+}
 
+/* styling for the img citations */
 .citation {
   font-size: 60%;
 }
 
+/* styling for the columns in history.php */
 .column {
   float: left;
   width: 33%;
   border-left: 1px solid #bbb;
+  border-top: 1px solid #bbb;
 }
-
 /* to clear floats after column */
 .row:after {
   content: "";
@@ -134,17 +142,18 @@ header {
   clear: both;
 }
 
+/* for centered content */
 #content {
   text-align: center;
 }
 
+/* styling for the button on submit.php that goes back to gear.php*/
 .button1 {
     font-family: "Impact";
     background-color: white;
     border: 2px solid black;
     font-size: 2vw;
 }
-
 .button1:hover {
     background-color: black;
     color: white;
