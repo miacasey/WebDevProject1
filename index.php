@@ -13,13 +13,13 @@ $current_page_id="index";
 
   <link rel="stylesheet" type="text/css" href="styles/all.css" media="all" />
 
-  <title id="menu-font"> Home - <?php echo $title;?></title>
+  <title> Home - <?php echo $title;?></title>
 </head>
 
 <body>
   <?php include("includes/header.php");?>
-  <div>
-    k
+  <div id='content' class="main">
+    <h3> welcome </h3>
   </div>
 
 </body>

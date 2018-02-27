@@ -1,18 +1,16 @@
-<header>
-  <h1> SURFING </h1>
+<header id="backgroundimage">
+  <h1><?php echo $title; ?> </h1>
 
-  <nav id="menu">
     <ul>
       <?php
       foreach($pages as $page_id => $page_name) {
         if($page_id == $current_page_id) {
-          $css_id = "id='current_page'";
+          $css_id = "class='active' id='current_page'";
         } else {
           $css_id = "";
         }
-        echo "<li><a " . $css_id . " href='" . $page_id . ".php'>$page_name</a></li>";
+        echo "<li><a" . $css_id . " href='" . $page_id . ".php'>$page_name</a></li>";
       }
       ?>
     </ul>
-  </nav>
 </header>

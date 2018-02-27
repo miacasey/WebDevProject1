@@ -11,14 +11,27 @@ $current_page_id="gear";
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="styles/all.css" media="all" />
-
-  <title>Gear - <?php echo $title;?></title>
+  <title> Gear - <?php echo $title;?></title>
 </head>
 
 <body>
   <?php include("includes/header.php");?>
-  <div>
-    c
+  <div id="content" class= "main">
+    <h3> find the gear for you! </h3>
+    <form method="post" action="submit.php">
+      <fieldset>
+      <legend>Type of Surf:</legend>
+      Time of Season? <br>
+      <input type="radio" name="season" value="Summer" required> Summmer
+      <input type="radio" name="season" value="Winter" required> Winter <br> <br>
+       Level of Surfer? <br>
+      <input type="radio" name="level" value="Beginner" required> Beginner
+      <input type="radio" name="level" value="intermediate" required> Intermediate
+      <input type="radio" name="level" value="advanced" required> Advanced
+      <br><br>
+      <input type="submit" name="submit" value="Submit Form"/>
+    </fieldset>
+    </form>
   </div>
 
 </body>

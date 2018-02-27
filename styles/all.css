@@ -1,69 +1,151 @@
 html {
-  font-family: "Courier New";
+  font-family: "Monaco";
+  font-size: 2vw;
 }
 
 h1 {
   color: navy;
+  font-family: "Impact";
   font-weight: bold;
   font-size: 10vw;
-  margin-top: -50px;
-  bottom: 20px;
+  margin: 20px;
 }
 
 h2 {
-  color: #4682B4;
+  font-family: "Impact";
+  color: black;
+  text-align: center;
 }
 
-article p {
-  text-align: justify;
+h3 {
+  font-family: "Impact";
+  color: navy;
+  font-size: 6vw;
+}
+
+#small {
+  font-size: 1.5vw;
 }
 
 header {
-  padding-top: 80px;
-  height: 200px;
-  background-image: url('../images/surfbackdrop.jpg');
-  /* https://fineartamerica.com/featured/surfing-at-hawaii-john-yato.html */
-  background-size: 100% 100%;
-}
-
-#menu-font {
   color: white;
 }
 
-#menu {
-  display: inline;
+#backgroundimage {
+  top: 0;
+  background-image: url('../images/surfbackdrop.jpg');
+  /* https://fineartamerica.com/featured/surfing-at-hawaii-john-yato.html */
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 25vw;
+  background-repeat: no-repeat;
 }
 
-#menu ul {
-  margin-top: 110px;
-  padding: 40px;
-  list-style: none;
-  background-color: #0C0F73;
+#backgroundimage ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 25vw;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
 }
 
-#menu li {
-  margin: 0;
-  padding: 10px;
-  display: inline;
+#backgroundimage li {
+  list-style-type: none;
+  float: left;
+  border-right: 1px solid #bbb;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 14px;
 }
 
-#menu li a{
-    text-decoration: none;
-    color: white;
-  }
-
-body {
-  background-color: powderblue;
-  margin: 0 auto;
+#backgroundimage li:last-child {
+  border-right: none;
 }
 
-#database {
-  float: right;
+#backgroundimage li a{
+  color: white;
+  text-decoration: none;
+}
+
+#backgroundimage li a.active {
+  padding: 10px 12px;
+}
+
+#backgroundimage li a:hover{
+  background-color: blue;
+  padding: 10px 12px;
 }
 
 #current_page {
-  font-weight: bold;
   border-style: solid;
-  padding: 2px 2px 2px 2px;
   text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.boxed {
+  border: 1px solid black;
+  padding: 2%;
+}
+
+.main #marker1 {
+  position: absolute;
+  width: 8%;
+  left: 0;
+  top:35%;
+}
+
+.main #marker2 {
+  position: absolute;
+  width: 8%;
+  right: 8%;
+  top:60%;
+}
+
+.main #marker3 {
+  position: absolute;
+  width: 8%;
+  left: 8.5%;
+  top:22%;
+}
+
+.citation {
+  font-size: 60%;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  border-left: 1px solid #bbb;
+}
+
+/* to clear floats after column */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#content {
+  text-align: center;
+}
+
+.button1 {
+    font-family: "Impact";
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2vw;
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
 }
