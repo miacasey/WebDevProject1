@@ -46,3 +46,9 @@ for each(item in gear)
   call the function print_gear(item)
 end for each loop
 ```
+
+Update 2/27/18: Change in Design Plan-
+I kept the plan for my first three pages: home, travel, and history.
+I deviated from my design plan for the gear page to use a more complex user defined function (two functions). These functions, located on the submit.php page, take the input in gear.php form and has conditionals to print an appropriate picture of what gear the user should purchase.
+
+My array and loop are located in my includes on header.php. I use conditional statements three times in submit.php and once in header.php.

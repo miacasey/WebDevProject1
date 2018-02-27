@@ -32,6 +32,6 @@ $current_page_id="gear";
     </fieldset>
     </form>
   </div>
-
+<?php include("includes/footer.php");?>
 </body>
 </html>

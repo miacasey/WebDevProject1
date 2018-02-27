@@ -34,6 +34,6 @@ $current_page_id="index";
           <span class="citation">(source: <a> my photo library </a>)</span>
     </figcaption>
   </div>
-
+<?php include("includes/footer.php");?>
 </body>
 </html>

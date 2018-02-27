@@ -61,5 +61,6 @@ $current_page_id="history";
             http://www.allstaractivities.com/sports/surfing/History-of-surfing.htm</a>)</span>
     </figcaption>
   </div>
+  <?php include("includes/footer.php");?>
 </body>
 </html>

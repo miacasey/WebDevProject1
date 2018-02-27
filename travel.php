@@ -21,6 +21,7 @@ $current_page_id="travel";
     <div class="main" id="content">
     <img src="images/map.png" width=100% alt="World" usemap="#worldmap">
     <!-- Image source: http://webiconspng.com/icon/78864 -->
+    <!-- Image source: https://www.iconfinder.com/search?q=Map -->
     <figcaption>
           <span class="citation">(map source: <a href="http://webiconspng.com/icon/78864">
             http://webiconspng.com/icon/78864</a>)</span>
@@ -90,6 +91,6 @@ $current_page_id="travel";
              (information source: <a href="http://www.travelandleisure.com/local-experts/cape-town/where-surf-cape-town"> http://www.travelandleisure.com/local-experts/cape-town/where-surf-cape-town </a>)</span>
        </figcaption>
   </div>
-
+  <?php include("includes/footer.php");?>
 </body>
 </html>

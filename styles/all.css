@@ -71,15 +71,18 @@ header {
   text-decoration: none;
 }
 
+/*active styling */
 #backgroundimage li a.active {
   padding: 10px 12px;
 }
 
+/*hover styling */
 #backgroundimage li a:hover{
   background-color: blue;
   padding: 10px 12px;
 }
 
+/*current page styling */
 #current_page {
   border-style: solid;
   text-decoration: none;
@@ -91,13 +94,14 @@ header {
 
 }
 
+/*box styling around our travel locations */
 .boxed {
   border: 1px solid black;
   padding: 2%;
   margin: 6%;
 }
 
-
+/*style and location specs for our map markers */
 .main #marker1 {
   position: absolute;
   width: 8%;
